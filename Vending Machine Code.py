@@ -14,24 +14,40 @@ class VendingMachine:
             'B5': {'name': 'Not so fun Pretzels', 'price': 3, 'quantity': 5}
         }
 
-        # Initialize the combo deals with their names and prices
+        # Initialize the combo deals with their names, prices, and quantities
         self.combo_deals = {
-            'C1': {'name': 'Salt and Vinegar with Nuka Cola', 'price': 6},
-            'C2': {'name': "Miss sweety's white chocolate with C&C Cookies", 'price': 9},
-            'C3': {'name': "Dee'z Nuts with T-Pain's Granola Bars and Soda", 'price': 9},
-            'C4': {'name': 'Cuboid Gum with Echo Echo Candy', 'price': 3},
-            'C5': {'name': 'Salt and Vinegar Chips with Echo Echo Candy', 'price': 5},
-            'C6': {'name': "Garret's Popcorn with Soda and Chips", 'price': 10},
-            'C7': {'name': "Miss sweety's white chocolate with Echo Echo Gum", 'price': 6},
-            'C8': {'name': 'C&C Cookies with Nuka Cola and Echo Echo Candy', 'price': 8},
-            'C9': {'name': 'Not so fun Pretzels with Nuka Cola', 'price': 5},
-            'D1': {'name': "Dee'z Nuts with Echo Echo Candy and Nuka Cola", 'price': 8},
-            'D2': {'name': "Cuboid Gum with Garret's Popcorn and Miss sweety's white chocolate", 'price': 11},
-            'D3': {'name': "Echo Echo Candy with Garret's Popcorn and Nuka Cola", 'price': 9},
-            'D4': {'name': 'Salt and Vinegar Chips with Not so fun Pretzels and Echo Echo Candy', 'price': 8},
-            'D5': {'name': "T-Pain's Granola Bar with Gum and Soda", 'price': 7},
-            'D6': {'name': 'C&C Cookies with Not So Fun Pretzels and Salt and Vinegar Chips', 'price': 9}
+            'C1': {'name': 'Salt and Vinegar with Nuka Cola', 'price': 6, 'snacks': 
+                   {'A1': 1, 'A3': 1}},
+            'C2': {'name': "Miss sweety's white chocolate with C&C Cookies", 'price': 9, 'snacks': 
+                   {'A2': 1, 'A4': 1}},
+            'C3': {'name': "Dee'z Nuts with T-Pain's Granola Bars and Soda", 'price': 9, 'snacks': 
+                   {'B1': 1, 'B2': 1, 'A3': 1}},
+            'C4': {'name': 'Cuboid Gum with Echo Echo Candy', 'price': 3, 'snacks': 
+                   {'A5': 1, 'B3': 1}},
+            'C5': {'name': 'Salt and Vinegar Chips with Echo Echo Candy', 'price': 5, 'snacks': 
+                   {'A1': 1, 'B3': 1}},
+            'C6': {'name': "Garret's Popcorn with Soda and Chips", 'price': 10, 'snacks': 
+                   {'B4': 1, 'A3': 1, 'A1': 1}},
+            'C7': {'name': "Miss sweety's white chocolate with Echo Echo Gum", 'price': 6, 'snacks': 
+                   {'A2': 1, 'B3': 1}},
+            'C8': {'name': 'C&C Cookies with Nuka Cola and Echo Echo Candy', 'price': 8, 'snacks': 
+                   {'A4': 1, 'A3': 1, 'B3': 1}},
+            'C9': {'name': 'Not so fun Pretzels with Nuka Cola', 'price': 5, 'snacks': 
+                   {'B5': 1, 'A3': 1}},
+            'D1': {'name': "Dee'z Nuts with Echo Echo Candy and Nuka Cola", 'price': 8, 'snacks': 
+                   {'B1': 1, 'B3': 1, 'A3': 1}},
+            'D2': {'name': "Cuboid Gum with Garret's Popcorn and Miss sweety's white chocolate", 'price': 11, 'snacks': 
+                   {'A5': 1, 'B4': 1, 'A2': 1}},
+            'D3': {'name': "Echo Echo Candy with Garret's Popcorn and Nuka Cola", 'price': 9, 'snacks': 
+                   {'B3': 1, 'B4': 1, 'A3': 1}},
+            'D4': {'name': 'Salt and Vinegar Chips with Not so fun Pretzels and Echo Echo Candy', 'price': 8, 'snacks': 
+                   {'A1': 1, 'B5': 1, 'B3': 1}},
+            'D5': {'name': "T-Pain's Granola Bar with Gum and Soda", 'price': 7, 'snacks': 
+                   {'B2': 1, 'A5': 1, 'A3': 1}},
+            'D6': {'name': 'C&C Cookies with Not So Fun Pretzels and Salt and Vinegar Chips', 'price': 9, 'snacks': 
+                   {'A4': 1, 'B5': 1, 'A1': 1}}
         }
+
 
         # Initialize the balance amount for demonstration
         self.balance = 30
